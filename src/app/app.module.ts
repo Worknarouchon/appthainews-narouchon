@@ -10,6 +10,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { DetailPage } from '../pages/detail/detail';
+import { EntertainmentPage } from '../pages/entertainment/entertainment';
+import { HotnewsPage } from '../pages/hotnews/hotnews';
+import { SciencePage } from '../pages/science/science';
+import { HttpModule } from '@angular/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,11 +25,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailPage,
+    EntertainmentPage,
+    HotnewsPage,
+    SciencePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,7 +42,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailPage,
+    EntertainmentPage,
+    HotnewsPage,
+    SciencePage
   ],
   providers: [
     StatusBar,
